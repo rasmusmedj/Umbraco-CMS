@@ -24,7 +24,7 @@ describe('list view helper tests', function () {
         it('returns button permissions', function () {
 
             var currentIdsWithPermissions = {};
-            var result1 = listViewHelper.getButtonPermissions({ "1234": ["O", "C", "D", "M", "U"] }, currentIdsWithPermissions);
+            var result1 = listViewHelper.getButtonPermissions({ "1234": ["O", "C", "D", "M", "U", "Z"] }, currentIdsWithPermissions);
 
             expect(result1["canCopy"]).toBe(true);
             expect(result1["canCreate"]).toBe(true);
